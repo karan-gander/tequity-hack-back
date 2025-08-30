@@ -7,7 +7,7 @@ const cors = require('cors');
 const { cleanJsonString } = require('./helper/index.js'); // Assuming this function is robust
 
 const app = express();
-const port = 3001;
+const port = 30001||process.env.PORT
 
 // Load API key from environment variables
 const genAI = new GoogleGenerativeAI("AIzaSyC4egU_MzWNMwx4wz2V94QOR7nAhe7Z2gA");
